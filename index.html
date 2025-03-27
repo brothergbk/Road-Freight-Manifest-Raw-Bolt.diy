@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customs Road Freight Manifest</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h1 class="main-title">CUSTOMS ROAD FREIGHT MANIFEST</h1>
+            <div class="manifest-number-box">
+                <span>DA 187</span>
+                <label for="manifestNumber">MANIFEST NUMBER:</label>
+                <input type="text" id="manifestNumber" name="manifestNumber">
+            </div>
+        </div>
+        <p class="subtitle">FOREIGN TRANSPORTER / LICENSED REMOVER OF GOODS IN BOND (RSA):</p>
+        <p class="subtitle-small">Customs and Excise Act, 1964 (Act No. 91 of 1964) – (Section 64D and its rules (rule 64D.08(4))</p>
+
+        <form id="manifestForm">
+            <div class="form-grid">
+                <div class="form-group span-2">
+                    <label for="removerName">Name of licensed remover of goods in bond (RSA)</label>
+                    <input type="text" id="removerName" name="removerName" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="removerClientCode">Client Code (RSA):</label>
+                    <input type="text" id="removerClientCode" name="removerClientCode" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="pageNumber">Page: ........ of ........</label>
+                    <input type="text" id="pageNumber" name="pageNumber" class="form-control">
+                </div>
+
+                <div class="form-group span-2">
+                    <label for="transporterName">Name of foreign transporter / subcontractor:</label>
+                    <input type="text" id="transporterName" name="transporterName" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="transporterClientCode">Client Code (RSA):</label>
+                    <input type="text" id="transporterClientCode" name="transporterClientCode" class="form-control">
+                </div>
+                <div class="form-group">
+                    <!-- Empty cell -->
+                </div>
+
+                <div class="form-group span-4">
+                    <label>REGISTRATION NUMBER(S):</label>
+                    <div class="registration-inputs">
+                        <div>
+                            <label for="regTruck">TRUCK:</label>
+                            <input type="text" id="regTruck" name="regTruck" class="form-control">
+                        </div>
+                        <div>
+                            <label for="regTrailer1">*TRAILER (1)</label>
+                            <input type="text" id="regTrailer1" name="regTrailer1" class="form-control">
+                        </div>
+                         <div>
+                            <label for="regTrailer2">*TRAILER (2)</label>
+                            <input type="text" id="regTrailer2" name="regTrailer2" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="form-group span-4">
+                    <label for="containerNumbers">*CONTAINER NUMBER(S):</label>
+                    <input type="text" id="containerNumbers" name="containerNumbers" class="form-control">
+                </div>
+
+                 <div class="form-group span-4">
+                    <label for="sealNumbers">*SEAL NUMBER(S):</label>
+                    <input type="text" id="sealNumbers" name="sealNumbers" class="form-control">
+                </div>
+            </div>
+
+            <div class="cargo-table-container">
+                <table class="cargo-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">LINE NO.</th>
+                            <th rowspan="2">WAYBILL NO.</th>
+                            <th rowspan="2">PACKAGES NO. & TYPE</th>
+                            <th rowspan="2">WEIGHT/M ASS</th>
+                            <th rowspan="2">DESCRIPTION OF GOODS</th>
+                            <th rowspan="2">CONSIGNOR</th>
+                            <th rowspan="2">CONSIGNEE</th>
+                            <th colspan="2">CLEARING AGENT IDENTIFICATION</th>
+                            <th colspan="2">BILL OF ENTRY NO.& DATE</th>
+                        </tr>
+                        <tr>
+                            <th>EXIT</th>
+                            <th>ENTRY</th>
+                            <th>EXIT</th>
+                            <th>ENTRY</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic rows will be added here -->
+                        <tr>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                         <tr>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="certification-section">
+                <p>I hereby certify that the particulars shown on this manifest are a true reflection of all the goods carried on the above-mentioned vehicle/s.</p>
+            </div>
+
+            <div class="footer-grid">
+                 <div class="signature-section">
+                    <label>Signature of Licensed Remover of goods in bond(RSA)</label>
+                    <div class="signature-line"></div>
+                    <div class="date-place">
+                        <label>DATE</label><input type="text" class="form-control small-input">
+                        <label>PLACE</label><input type="text" class="form-control small-input">
+                    </div>
+                </div>
+                 <div class="customs-use">
+                    <label>FOR CUSTOMS USE</label>
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
+                 <div class="customs-stamp">
+                    <label>CUSTOMS STAMP - EXIT</label>
+                     <div class="stamp-area"></div>
+                     <label>REPORT NUMBER</label>
+                     <input type="text" class="form-control">
+                </div>
+                 <div class="customs-stamp">
+                    <label>CUSTOMS STAMP - ENTRY</label>
+                     <div class="stamp-area"></div>
+                     <label>REPORT NUMBER</label>
+                     <input type="text" class="form-control">
+                </div>
+
+                 <div class="signature-section">
+                    <label>Signature of Subcontractor</label>
+                    <div class="signature-line"></div>
+                     <div class="date-place">
+                        <label>DATE</label><input type="text" class="form-control small-input">
+                        <label>PLACE</label><input type="text" class="form-control small-input">
+                    </div>
+                </div>
+                 <div></div><!-- Empty cell -->
+                 <div></div><!-- Empty cell -->
+                 <div></div><!-- Empty cell -->
+
+
+                 <div class="signature-section">
+                    <label>Signature of Foreign Transporter</label>
+                    <div class="signature-line"></div>
+                     <div class="date-place">
+                        <label>DATE</label><input type="text" class="form-control small-input">
+                        <label>PLACE</label><input type="text" class="form-control small-input">
+                    </div>
+                </div>
+                 <div></div><!-- Empty cell -->
+                 <div></div><!-- Empty cell -->
+                 <div></div><!-- Empty cell -->
+            </div>
+
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>This manifest is to be completed at least in triplicate by the Transporter or Licensed Remover of goods in bond.</li>
+                    <li>This manifest and a copy of the appropriate Bill(s) of Entry / Transit Declaration(s) must accompany the load carrying vehicle at all times.</li>
+                    <li>* Delete whichever is not applicable.</li>
+                    <li>Only a licensed remover of goods in bond may be used as a subcontractor.</li>
+                    <li>Foreign transporter means a road carrier transporting goods in bond by means of transport not registered in the Republic.</li>
+                </ol>
+            </div>
+
+        </form>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

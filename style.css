@@ -1,0 +1,302 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light; /* Force light mode for better form visibility */
+  color: #213547;
+  background-color: #f5f5f5; /* Match body background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    padding: 20px;
+    margin: 0;
+    display: block; /* Override vite default */
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px; /* Wider container for the form */
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 30px;
+    border: 1px solid #ccc; /* Add border like the image */
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    text-align: center;
+    color: #000;
+    font-size: 24px; /* Adjust size */
+    margin-bottom: 5px;
+    font-weight: bold;
+    flex-grow: 1; /* Allow title to take space */
+}
+
+.manifest-number-box {
+    border: 1px solid #000;
+    padding: 5px 10px;
+    text-align: center;
+    min-width: 200px; /* Ensure minimum width */
+}
+
+.manifest-number-box span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.manifest-number-box label {
+    font-size: 12px;
+    margin-right: 5px;
+}
+.manifest-number-box input {
+    border: none;
+    border-bottom: 1px dotted #000;
+    font-size: 12px;
+    padding: 2px;
+    width: 80px; /* Adjust as needed */
+}
+
+
+.subtitle {
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.subtitle-small {
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 15px 20px; /* Row gap, Column gap */
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.span-2 {
+    grid-column: span 2;
+}
+.form-group.span-3 {
+    grid-column: span 3;
+}
+.form-group.span-4 {
+    grid-column: span 4;
+}
+
+
+.form-label,
+label {
+    display: block;
+    margin-bottom: 4px;
+    color: #333;
+    font-size: 12px; /* Smaller labels */
+    font-weight: normal;
+}
+
+.form-control {
+    width: 100%;
+    padding: 6px 8px; /* Smaller padding */
+    border: 1px solid #aaa; /* Slightly darker border */
+    border-radius: 2px; /* Less rounded */
+    font-size: 13px;
+    background-color: #fff;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #0080ff;
+}
+
+.registration-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: end; /* Align items to the bottom */
+    border: 1px solid #aaa;
+    padding: 5px;
+}
+
+.registration-inputs > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-inputs label {
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+
+.cargo-table-container {
+    margin-bottom: 20px;
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.cargo-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.cargo-table th,
+.cargo-table td {
+    border: 1px solid #000;
+    padding: 4px;
+    text-align: center;
+    vertical-align: top; /* Align content to top */
+}
+
+.cargo-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    font-size: 11px; /* Smaller header font */
+    white-space: normal; /* Allow text wrapping */
+}
+
+.cargo-table td input.form-control {
+    font-size: 12px;
+    padding: 2px 4px;
+    height: 100%; /* Make input fill cell height */
+    border-radius: 0;
+    border: none; /* Remove border inside cell */
+}
+.cargo-table td input.form-control:focus {
+     outline: 1px solid #0080ff; /* Outline on focus */
+}
+
+
+.certification-section {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+}
+
+.signature-section {
+    border: 1px solid #aaa;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px; /* Ensure minimum height */
+}
+.signature-section label {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.signature-line {
+    border-bottom: 1px dotted #000;
+    margin-top: auto; /* Push to bottom */
+    margin-bottom: 10px;
+    min-height: 20px;
+}
+.date-place {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.date-place label {
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+.small-input {
+    width: 80px; /* Smaller inputs for date/place */
+    padding: 3px 5px;
+    font-size: 12px;
+}
+
+.customs-use, .customs-stamp {
+    border: 1px solid #aaa;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.customs-use label, .customs-stamp label {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.customs-use textarea {
+    flex-grow: 1; /* Allow textarea to fill space */
+    font-size: 12px;
+}
+.stamp-area {
+    border: 1px dashed #ccc;
+    min-height: 80px;
+    flex-grow: 1;
+    margin-bottom: 5px;
+}
+.customs-stamp input.form-control {
+    font-size: 12px;
+    padding: 3px 5px;
+}
+
+
+.instructions {
+    font-size: 12px;
+    margin-top: 20px;
+}
+.instructions h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.instructions ol {
+    margin-left: 20px;
+}
+.instructions li {
+    margin-bottom: 3px;
+}
+
+/* Hide vite default elements if they appear */
+#app > div { display: none; }
+</style>
